@@ -174,8 +174,8 @@ class PacmanGraphics:
         self.capture = capture
         self.frameTime = frameTime
 
-    # def saveFrame(self):
-    #     saveFrame()
+    def saveFrame(self):
+        saveFrame()
 
     def checkNullDisplay(self):
         return False

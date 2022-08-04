@@ -692,7 +692,7 @@ def runGames(layout, pacman, ghosts, display, numGames, record, numTraining=0, c
 
     for i in range(numGames):
         beQuiet = i < numGames - 50
-        if beQuiet:
+        if not beQuiet:
             # Suppress output and graphics
             import textDisplay
             gameDisplay = textDisplay.NullGraphics()

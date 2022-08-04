@@ -657,7 +657,7 @@ class Game:
             agent = self.agents[agentIndex]
             move_time = 0
             skip_action = False
-            # self.display.saveFrame()
+            self.display.saveFrame()
 
             # Generate an observation of the state
             if 'observationFunction' in dir(agent):
