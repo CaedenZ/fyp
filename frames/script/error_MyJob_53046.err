@@ -1,0 +1,15 @@
+  0%|          | 0/10 [00:00<?, ?it/s]/home/FYP/fzhao006/.conda/envs/pacmanDQN/lib/python3.9/site-packages/torch/nn/modules/loss.py:530: UserWarning: Using a target size (torch.Size([32, 3, 851, 851])) that is different to the input size (torch.Size([32, 3, 350, 350])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+  0%|          | 0/10 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/FYP/fzhao006/fyp/frames/script/cae2.py", line 113, in <module>
+    loss = criterion(outputs, inputs)
+  File "/home/FYP/fzhao006/.conda/envs/pacmanDQN/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/FYP/fzhao006/.conda/envs/pacmanDQN/lib/python3.9/site-packages/torch/nn/modules/loss.py", line 530, in forward
+    return F.mse_loss(input, target, reduction=self.reduction)
+  File "/home/FYP/fzhao006/.conda/envs/pacmanDQN/lib/python3.9/site-packages/torch/nn/functional.py", line 3279, in mse_loss
+    expanded_input, expanded_target = torch.broadcast_tensors(input, target)
+  File "/home/FYP/fzhao006/.conda/envs/pacmanDQN/lib/python3.9/site-packages/torch/functional.py", line 73, in broadcast_tensors
+    return _VF.broadcast_tensors(tensors)  # type: ignore[attr-defined]
+RuntimeError: The size of tensor a (350) must match the size of tensor b (851) at non-singleton dimension 3

@@ -1,0 +1,4 @@
+True
+<class 'torch.Tensor'>
+torch.Size([32, 3, 350, 350])
+torch.Size([32])

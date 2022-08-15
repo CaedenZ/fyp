@@ -1,0 +1,5 @@
+  0%|          | 0/10 [00:00<?, ?it/s]  0%|          | 0/10 [00:38<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/FYP/fzhao006/fyp/frames/script/cae2.py", line 129, in <module>
+    epoch_loss = running_loss / dataset_sizes[phase]
+NameError: name 'dataset_sizes' is not defined
